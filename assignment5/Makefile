@@ -20,8 +20,8 @@ OUT_EXE2 = convert
 # Build program
 # ---------------------------------------------------------
 build: $(FILES1) $(FILES2)
-		$(CC) -Wall -o $(OUT_EXE1) $(FILES1)
-		$(CC) -Wall -o $(OUT_EXE2) $(FILES2)
+		$(CC) -o $(OUT_EXE1) $(FILES1)
+		$(CC) -o $(OUT_EXE2) $(FILES2)
 
 # Clean old files
 # ---------------------------------------------------------

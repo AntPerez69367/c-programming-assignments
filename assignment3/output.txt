@@ -1,0 +1,59 @@
+
+Printing out unshuffled deck....
+
+Ace of Hearts   	Two of Hearts   	Three of Hearts   	Four of Hearts   	
+Five of Hearts   	Six of Hearts   	Seven of Hearts   	Eight of Hearts   	
+Nine of Hearts   	Ten of Hearts   	Jack of Hearts   	Queen of Hearts   	
+King of Hearts   	Ace of Clubs    	Two of Clubs    	Three of Clubs    	
+Four of Clubs    	Five of Clubs    	Six of Clubs    	Seven of Clubs    	
+Eight of Clubs    	Nine of Clubs    	Ten of Clubs    	Jack of Clubs    	
+Queen of Clubs    	King of Clubs    	Ace of Diamonds 	Two of Diamonds 	
+Three of Diamonds 	Four of Diamonds 	Five of Diamonds 	Six of Diamonds 	
+Seven of Diamonds 	Eight of Diamonds 	Nine of Diamonds 	Ten of Diamonds 	
+Jack of Diamonds 	Queen of Diamonds 	King of Diamonds 	Ace of Spades   	
+Two of Spades   	Three of Spades   	Four of Spades   	Five of Spades   	
+Six of Spades   	Seven of Spades   	Eight of Spades   	Nine of Spades   	
+Ten of Spades   	Jack of Spades   	Queen of Spades   	King of Spades   	
+
+Shuffling deck...
+
+Printing shuffled deck...
+
+Jack of Hearts   	Two of Hearts   	Three of Spades   	Eight of Diamonds 	
+Eight of Clubs    	King of Diamonds 	Ten of Hearts   	Nine of Clubs    	
+Ten of Diamonds 	Ace of Diamonds 	Two of Clubs    	Jack of Spades   	
+Six of Clubs    	Ace of Hearts   	Three of Clubs    	Six of Hearts   	
+Six of Spades   	Jack of Clubs    	Four of Spades   	Three of Diamonds 	
+Three of Hearts   	Seven of Hearts   	Four of Diamonds 	Jack of Diamonds 	
+Queen of Hearts   	Seven of Diamonds 	Ten of Spades   	Ten of Clubs    	
+Five of Clubs    	Eight of Spades   	Eight of Hearts   	Nine of Diamonds 	
+Nine of Spades   	Two of Diamonds 	Queen of Diamonds 	Five of Spades   	
+Ace of Clubs    	Two of Spades   	Four of Hearts   	King of Clubs    	
+King of Hearts   	Seven of Spades   	Six of Diamonds 	King of Spades   	
+Ace of Spades   	Queen of Spades   	Queen of Clubs    	Four of Clubs    	
+Nine of Hearts   	Five of Diamonds 	Five of Hearts   	Seven of Clubs    	
+
+
+Player 1 |-----------------------------------------------------------------
+ 	 Jack of Hearts, Two of Hearts, Three of Spades, Eight of Diamonds,
+ 	 Eight of Clubs
+
+Player 2 |-----------------------------------------------------------------
+ 	 Ten of Hearts, Nine of Clubs, Ten of Diamonds, Ace of Diamonds,
+ 	 Two of Clubs
+
+Player 3 |-----------------------------------------------------------------
+ 	 Six of Clubs, Ace of Hearts, Three of Clubs, Six of Hearts,
+ 	 Six of Spades
+
+Player 4 |-----------------------------------------------------------------
+ 	 Four of Spades, Three of Diamonds, Three of Hearts, Seven of Hearts,
+ 	 Four of Diamonds
+
+Player 5 |-----------------------------------------------------------------
+ 	 Queen of Hearts, Seven of Diamonds, Ten of Spades, Ten of Clubs,
+ 	 Five of Clubs
+
+Player 6 |-----------------------------------------------------------------
+ 	 Seven of Diamonds, Ten of Spades, Ten of Clubs, Five of Clubs,
+ 	 Eight of Spades

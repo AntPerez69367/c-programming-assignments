@@ -1,0 +1,87 @@
+Parent - Shared memory values:  6  7  1  2  3  5 
+Parent - Forking child #1 
+Parent - Forking child #2 
+Parent - Child 1 forked successfully.
+Parent - Forking child #3 
+	 Child 1 - Process started with a PID of 17791.
+	 Child 1 - This is the initial shared memory: 6 7 1 2 3 5
+Parent - Forking child #4 
+	 Child 1 - This is my private memory: 1.
+	 Child 1 - Multiplying array element by 1.
+	 Child 1 - This is the modified shared memory: 6 7 1 2 3 5
+	 Child 1 - Process Complete, exiting with a code of 0.
+Parent - Child 3 forked successfully.
+Parent - Requesting shared memory of 6 integers. 
+Parent - Shared memory received.
+Parent - Shared memory successfully attached. 
+Parent - Shared memory populated with values. 
+Parent - Forking child #5 
+	 Child 3 - Process started with a PID of 17793.
+	 Child 3 - This is the initial shared memory: 6 7 1 2 3 5
+	 Child 3 - This is my private memory: 3.
+	 Child 3 - Multiplying array element by 3.
+	 Child 3 - This is the modified shared memory: 6 7 3 Parent - Forking child #6 
+2 3 5
+	 Child 3 - Process Complete, exiting with a code of 0.
+Parent - Requesting shared memory of 6 integers. 
+Parent - Shared memory received.
+Parent - Shared memory successfully attached. 
+Parent - Shared memory populated with values. 
+Parent - Child 4 forked successfully.
+	 Child 4 - Process started with a PID of 17794.
+	 Child 4 - This is the initial shared memory: 6 7 3 2 3 5
+	 Child 4 - This is my private memory: 4.
+	 Child 4 - Multiplying array element by 4.
+	 Child 4 - This is the modified shared memory: 6 7 3 8 3 5
+	 Child 4 - Process Complete, exiting with a code of 0.
+Parent - Child 2 forked successfully.
+Parent - Requesting shared memory of 6 integers. 
+Parent - Shared memory received.
+Parent - Shared memory successfully attached. 
+Parent - Shared memory populated with values. 
+	 Child 2 - Process started with a PID of 17792.
+	 Child 2 - This is the initial shared memory: 6 7 3 8 3 5
+	 Child 2 - This is my private memory: 2.
+	 Child 2 - Multiplying array element by 2.
+	 Child 2 - This is the modified shared memory: 6 14 3 8 3 5
+	 Child 2 - Process Complete, exiting with a code of 0.
+Parent - Requesting shared memory of 6 integers. 
+Parent - Shared memory received.
+Parent - Shared memory successfully attached. 
+Parent - Shared memory populated with values. 
+Parent - Child 5 forked successfully.
+	 Child 5 - Process started with a PID of 17795.
+	 Child 5 - This is the initial shared memory: 6 14 3 8 3 5
+	 Child 5 - This is my private memory: 5.
+Parent - Child 6 forked successfully.
+	 Child 5 - Multiplying array element by 5.
+	 Child 5 - This is the modified shared memory: 6 14 3 	 Child 6 - Process started with a PID of 17796.
+8 	 Child 6 - This is the initial shared memory: 15 6 5
+14 	 Child 5 - Process Complete, exiting with a code of 0.
+3 8 15 5
+	 Child 6 - This is my private memory: 6.
+	 Child 6 - Multiplying array element by 6.
+	 Child 6 - This is the modified shared memory: 6 14 3 8 15 Parent - Requesting shared memory of 6 integers. 
+Parent - Shared memory received.
+Parent - Shared memory successfully attached. 
+Parent - Shared memory populated with values. 
+30
+	 Child 6 - Process Complete, exiting with a code of 0.
+Parent - Requesting shared memory of 6 integers. 
+Parent - Shared memory received.
+Parent - Shared memory successfully attached. 
+Parent - Shared memory populated with values. 
+Parent - Requesting shared memory of 6 integers. 
+Parent - Shared memory received.
+Parent - Shared memory successfully attached. 
+Parent - Shared memory populated with values. 
+PID	 EXIT
+17791	   0
+17793	   0
+17794	   0
+17792	   0
+17795	   0
+17796	   0
+Parent - All child processes have exited. 
+Parent -  detached the shared memory.
+Parent -  removed the shared memory.

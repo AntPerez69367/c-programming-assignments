@@ -1,0 +1,15 @@
+	Estimation of Exponential e
+----------------------------------------------
+Estimate:		 2.7182818284590455348848081 
+Actual:  		 2.7182818284590450907955983 
+# of Iterations: 	 19
+Execution time of: 0.010835 milliseconds.
+
+	Estimation of the Square Root
+----------------------------------------------
+Enter a real number greater than or equal to 0: 5
+
+Estimated value of Sqrt(26): 5.09901951359278449161
+Math.h value of Sqrt(26): 5.09901951359278449161
+Number of Iterations: 18 
+Execution time of: 361.552125 milliseconds 

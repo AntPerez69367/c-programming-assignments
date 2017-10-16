@@ -1,0 +1,19 @@
+Pseudocode:
+
+Program 1:
+Get input data
+    getline store to string
+    sscanf string to filter format
+    validate dates
+    print valid dates only
+
+Program 2:
+Get input data
+    getline store to string
+    sscanf string for data
+    convert format
+    print new format
+
+Append dates.dat to output.dat
+
+make MakeFile

@@ -1,0 +1,163 @@
+
+Printing out unshuffled deck....
+
+Ace of Hearts   	Two of Hearts   	Three of Hearts   	Four of Hearts   	
+Five of Hearts   	Six of Hearts   	Seven of Hearts   	Eight of Hearts   	
+Nine of Hearts   	Ten of Hearts   	Jack of Hearts   	Queen of Hearts   	
+King of Hearts   	Ace of Clubs    	Two of Clubs    	Three of Clubs    	
+Four of Clubs    	Five of Clubs    	Six of Clubs    	Seven of Clubs    	
+Eight of Clubs    	Nine of Clubs    	Ten of Clubs    	Jack of Clubs    	
+Queen of Clubs    	King of Clubs    	Ace of Diamonds 	Two of Diamonds 	
+Three of Diamonds 	Four of Diamonds 	Five of Diamonds 	Six of Diamonds 	
+Seven of Diamonds 	Eight of Diamonds 	Nine of Diamonds 	Ten of Diamonds 	
+Jack of Diamonds 	Queen of Diamonds 	King of Diamonds 	Ace of Spades   	
+Two of Spades   	Three of Spades   	Four of Spades   	Five of Spades   	
+Six of Spades   	Seven of Spades   	Eight of Spades   	Nine of Spades   	
+Ten of Spades   	Jack of Spades   	Queen of Spades   	King of Spades   	
+
+
+Shuffling deck...
+
+Printing shuffled deck...
+
+Queen of Spades   	Four of Spades   	Seven of Spades   	Four of Diamonds 	
+Three of Diamonds 	Jack of Diamonds 	Eight of Clubs    	Two of Spades   	
+Queen of Hearts   	Eight of Hearts   	Ten of Clubs    	Jack of Clubs    	
+Three of Hearts   	Ten of Spades   	King of Clubs    	King of Spades   	
+Nine of Hearts   	Queen of Clubs    	King of Diamonds 	Ace of Hearts   	
+Seven of Clubs    	Two of Clubs    	Three of Clubs    	Eight of Spades   	
+Two of Diamonds 	Nine of Diamonds 	Six of Spades   	Four of Clubs    	
+Ace of Diamonds 	Four of Hearts   	Seven of Diamonds 	Three of Spades   	
+Five of Hearts   	Six of Clubs    	Six of Hearts   	Two of Hearts   	
+Five of Spades   	Nine of Clubs    	Ten of Hearts   	Jack of Hearts   	
+Five of Diamonds 	Five of Clubs    	King of Hearts   	Ace of Clubs    	
+Seven of Hearts   	Ace of Spades   	Nine of Spades   	Eight of Diamonds 	
+Six of Diamonds 	Jack of Spades   	Ten of Diamonds 	Queen of Diamonds 	
+
+
+
+Player 1 |------------------------------------------------------------|
+	 |  Queen of Spades, Jack of Diamonds, Ten of Clubs,
+	 |  King of Spades, Seven of Clubs
+	 |------------------------------------------------------------|
+
+Player 2 |------------------------------------------------------------|
+	 |  Four of Spades, Eight of Clubs, Jack of Clubs,
+	 |  Nine of Hearts, Two of Clubs
+	 |------------------------------------------------------------|
+
+Player 3 |------------------------------------------------------------|
+	 |  Seven of Spades, Two of Spades, Three of Hearts,
+	 |  Queen of Clubs, Three of Clubs
+	 |------------------------------------------------------------|
+
+Player 4 |------------------------------------------------------------|
+	 |  Four of Diamonds, Queen of Hearts, Ten of Spades,
+	 |  King of Diamonds, Eight of Spades
+	 |------------------------------------------------------------|
+
+Player 5 |------------------------------------------------------------|
+	 |  Three of Diamonds, Eight of Hearts, King of Clubs,
+	 |  Ace of Hearts, Two of Diamonds
+	 |------------------------------------------------------------|
+
+Sorting Player Hands
+
+Player 1 |------------------------------------------------------------|
+	 |  Seven of Clubs, Ten of Clubs, Jack of Diamonds,
+	 |  Queen of Spades, King of Spades
+	 |------------------------------------------------------------|
+
+Player 2 |------------------------------------------------------------|
+	 |  Two of Clubs, Four of Spades, Eight of Clubs,
+	 |  Nine of Hearts, Jack of Clubs
+	 |------------------------------------------------------------|
+
+Player 3 |------------------------------------------------------------|
+	 |  Two of Spades, Three of Hearts, Three of Clubs,
+	 |  Seven of Spades, Queen of Clubs
+	 |------------------------------------------------------------|
+
+Player 4 |------------------------------------------------------------|
+	 |  Four of Diamonds, Eight of Spades, Ten of Spades,
+	 |  Queen of Hearts, King of Diamonds
+	 |------------------------------------------------------------|
+
+Player 5 |------------------------------------------------------------|
+	 |  Ace of Hearts, Two of Diamonds, Three of Diamonds,
+	 |  Eight of Hearts, King of Clubs
+	 |------------------------------------------------------------|
+
+
+Ranking Player Hands
+
+Player 1 |---------------------------------------------------------
+	 | Hand Rank: King       	 Value: 12         	  | 
+	 |---------------------------------------------------------  
+	 |  Seven of Clubs, Ten of Clubs, Jack of Diamonds,
+	 |  Queen of Spades, King of Spades
+Player 2 |---------------------------------------------------------
+	 | Hand Rank: Jack       	 Value: 10         	  | 
+	 |---------------------------------------------------------  
+	 |  Two of Clubs, Four of Spades, Eight of Clubs,
+	 |  Nine of Hearts, Jack of Clubs
+Player 3 *WINNER*|-------------------------------------------------
+	 | Hand Rank: One Pair   	 Value: 51         	  | 
+	 |---------------------------------------------------------  
+	 |  Two of Spades, Three of Hearts, Three of Clubs,
+	 |  Seven of Spades, Queen of Clubs
+Player 4 |---------------------------------------------------------
+	 | Hand Rank: King       	 Value: 12         	  | 
+	 |---------------------------------------------------------  
+	 |  Four of Diamonds, Eight of Spades, Ten of Spades,
+	 |  Queen of Hearts, King of Diamonds
+Player 5 |---------------------------------------------------------
+	 | Hand Rank: Ace        	 Value: 14         	  | 
+	 |---------------------------------------------------------  
+	 |  Ace of Hearts, Two of Diamonds, Three of Diamonds,
+	 |  Eight of Hearts, King of Clubs
+	 |--------------------------------------------------------|
+Initializing Test Cases and Displaying
+
+
+Player 1 *WINNER*|-------------------------------------------------
+	 | Hand Rank: Royal Flush 	 Value: 204        	  | 
+	 |---------------------------------------------------------  
+	 |  Ace of Hearts, Two of Hearts, Three of Hearts,
+	 |  Four of Hearts, Five of Hearts
+Player 2 |---------------------------------------------------------
+	 | Hand Rank: Straight   	 Value: 99         	  | 
+	 |---------------------------------------------------------  
+	 |  Six of Hearts, Seven of Spades, Eight of Hearts,
+	 |  Nine of Clubs, Ten of Hearts
+Player 3 |---------------------------------------------------------
+	 | Hand Rank: Four of a Kind 	 Value: 88         	  | 
+	 |---------------------------------------------------------  
+	 |  Six of Hearts, Six of Spades, Six of Diamonds,
+	 |  Six of Clubs, Nine of Clubs
+Player 4 |---------------------------------------------------------
+	 | Hand Rank: Full House 	 Value: 78         	  | 
+	 |---------------------------------------------------------  
+	 |  Six of Hearts, Six of Spades, Six of Clubs,
+	 |  Nine of Diamonds, Nine of Clubs
+Player 5 |---------------------------------------------------------
+	 | Hand Rank: Three of a Kind 	 Value: 68         	  | 
+	 |---------------------------------------------------------  
+	 |  Six of Hearts, Six of Spades, Six of Clubs,
+	 |  Seven of Diamonds, Nine of Clubs
+Player 6 |---------------------------------------------------------
+	 | Hand Rank: Two pair   	 Value: 58         	  | 
+	 |---------------------------------------------------------  
+	 |  Two of Clubs, Six of Hearts, Six of Spades,
+	 |  Nine of Diamonds, Nine of Clubs
+Player 7 |---------------------------------------------------------
+	 | Hand Rank: One Pair   	 Value: 48         	  | 
+	 |---------------------------------------------------------  
+	 |  Three of Diamonds, Five of Clubs, Six of Hearts,
+	 |  Six of Spades, Nine of Clubs
+Player 8 |---------------------------------------------------------
+	 | Hand Rank: Ace        	 Value: 14         	  | 
+	 |---------------------------------------------------------  
+	 |  Ace of Diamonds, Two of Spades, Six of Hearts,
+	 |  Nine of Clubs, Jack of Clubs
+	 |--------------------------------------------------------|

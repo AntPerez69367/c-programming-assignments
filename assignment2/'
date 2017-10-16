@@ -1,0 +1,192 @@
+/*=======================================================================
+ |   Source code: approx.c  
+ |   Author:      Anthony Perez
+ |   Student ID:  5456512 
+ |   Assignment:  Program #2 Approximation of e and square roots 
+ |  
+ |   Course:      COP4338 - Programming III  
+ |   Section:     U04  
+ |   Instructor:  William Feild  
+ |   Due Date:    07 February 2017, at the beginning of class
+ |
+ |   I hereby certify that this collective work is my own
+ |   and none of it is the work of any other person or entity.
+ |	______________________________________ [Signature]
+ |  
+ |  Language:     C 
+ |  Compile/Run:  gcc approx.c -lm -o approx.out
+ | 
+ |+-----------------------------------------------------------------------
+ |  
+ | Description: This program will display an approximation of the 
+ |   exponential e using an infinite series. It will then show the 
+ |   value of the exponential e using the math libraries.
+ |   The program will then ask the user for a number  which it will
+ |   then approximate the value of the square root using the Babylonian
+ |   method. It will show the number of iterations and the time it took.
+ |
+ | 
+ |  The exponential e will be computed using the formula:
+ |                       
+ |                         ∞
+ |                     e = ∑  1/n!          
+ |                        n=0               
+ |
+ |
+ |  The Babylonian method uses the formula:
+ |
+ |                         ∞
+ |                    √s = ∑  X_(n+1) = 1/2 * (X_n + (S/X_n))
+ |                        n=0
+ |
+ |  Where X_0 is the initial "guess".
+ |
+ |
+ |
+ |  Input: The user is required to input a number.
+ |    It is expected that the number will be a real number >= 0
+ |  
+ |  Output: This program will display the computed value for e,
+ |   the <math.h>  expected value of e, the number of iterations it took
+ |   to reach sixteen decimal-places, and the time in milliseconds that it
+ |   took to compute. It will also include the computed value for the
+ |   square root of a value input by the user, the number of iterations
+ |   it took to reach sixteen decimal-place accuracy, and the time in
+ |   milliseconds that it takes  to compute the square root. 
+ |               
+ |
+ |  Example outputs:   
+ |
+ |     Estimated value of e: 2.718281828459045265424
+ |     Expected value of e:  2.718281828459045235362
+ |     Iterations: 300
+ |     Time: 5 milliseconds
+ |
+ |     Please input a number to find the square root of: 30
+ |
+ |     Estimated value of Sqrt(30): 5.4772255750516611856435
+ |     Expected value of Sqrt(30):  5.4772255750516611345696
+ |     Iterations: 70
+ |     Time: 1.32 milliseconds
+ |
+ |  
+ |  Process: The Program's steps are as follows:
+ |
+ |    1.) The program will calculate e using the formula.  
+ |    2.) The program will save the time and number of iterations needed  
+ |    3.) The program will output the information to the terminal  
+ |    4.) User is prompted to input a number to find the square root of
+ |    5.) The program will estimate the square root using Babylonian method    
+ |    6.) The program will save the time and number of iterations needed
+ |    7.) The program will output the information to the terminal
+ |
+ |
+ |  Required Features Not Included: All features are included. 
+ |  
+ |  Known Bugs: None; the program operates correctly.  
+ |
+ |*======================================================================*/
+
+#include <stdio.h> /* Standard Input Output */
+#include <ctype.h> /* Used for isdigit() check */
+#include <math.h>  /* Used to get the expected value of e and sqrt */
+#include <time.h>  /* Used for measuring task time */
+
+/* Defines / Constants */
+ 
+/* Constant e obtained from 
+ * http://www-history.mcs.st-and.ac.uk/HistTopics/e_10000.html 
+ * */ 
+#define CONSTANT_E 2.718281828459045235360287471352662497757247093699959574966967627
+
+/* Function Prototypes*/
+ void main(); 
+ void estimateExp();
+ double getFactorial(int);
+
+ /* Functions */
+
+void main()
+{
+    estimateExp();
+}
+
+/**
+ * @brief 
+ */
+void estimateExp()
+{
+    clock_t startTime;//= clock();
+    clock_t endTime;// = clock();
+    double elapsedTime;// = 0.0;
+    double estimate = 0.0;
+    double temp = 0.0;
+    double oldTemp = 0.0;
+    int decimalPlaces = 0;
+    int index = 0;
+    int exit = 0;
+
+    startTime = clock();
+    while(decimalPlaces < 16)
+    {
+        estimate += 1.0/getFactorial(index); 
+
+        oldTemp = temp;
+        temp = estimate;
+        decimalPlaces = 0;
+        exit = 0;
+        
+        do /* Begin Do Loop */
+        {
+            if (floor(oldTemp) == floor(temp))
+            {
+                oldTemp -= floor(oldTemp);
+                oldTemp *= 10;
+                temp -= floor(temp);
+                temp *= 10;
+                decimalPlaces++;
+            }
+            else
+            {
+                exit = 1;
+            }
+        } while(exit != 1 && decimalPlaces < 16); /* End Do */
+
+        index++;    
+    }
+    
+    
+    endTime = clock();
+    printf("Start: %f   End: %f\n", startTime, endTime);
+    printf("CLOCKS_PER_SEC: %d\n", CLOCKS_PER_SEC); 
+    elapsedTime = (((double)endTime-startTime)/(double)CLOCKS_PER_SEC);
+    printf("%lf \n", elapsedTime);
+    printf("Estimate:\t %6.25f \n", estimate);
+    printf("Actual:  \t %6.25f \n", CONSTANT_E);
+    printf("# of Iterations: \t %d\n", index); 
+    printf("Elapsed Time: %1.10f \n", elapsedTime );
+}
+
+/**
+ * @brief 
+ *
+ * @param num
+ *
+ * @return 
+ */
+double getFactorial(int num)
+{
+    if (num == 0)
+    {
+        return 1;
+    }
+    if (num == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return (num * getFactorial(num-1));
+    }
+
+}
